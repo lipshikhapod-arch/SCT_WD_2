@@ -53,6 +53,10 @@ The interface is designed using HTML and CSS to provide a responsive and user-fr
 4. Use the Start, Pause, and Reset controls to operate the stopwatch.
 
 
+## 🌐 Live Demo
+
+[View Live Demo]( https://lipshikhapod-arch.github.io/SCT_WD_2/)
+
 ## 🎯 Learning Outcomes
 
 Through this project, I gained practical experience in:
