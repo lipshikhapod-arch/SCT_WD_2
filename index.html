@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glass Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Decorative Circles -->
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+    <div class="circle circle-three"></div>
+
+
+    <!-- Main Stopwatch -->
+    <main class="stopwatch-container">
+
+        <!-- Heading -->
+        <div class="heading">
+            <span class="stopwatch-icon">⏱</span>
+            <h1>STOPWATCH</h1>
+            <p>Precision Time Tracker</p>
+        </div>
+
+
+        <!-- Time Display -->
+        <div class="display-container">
+
+            <div id="display">
+                00:00:00
+            </div>
+
+            <div id="milliseconds">
+                .000
+            </div>
+
+        </div>
+
+
+        <!-- Status -->
+        <div class="status">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="statusText">READY</span>
+        </div>
+
+
+        <!-- Main Buttons -->
+        <div class="buttons">
+
+            <button
+                id="startBtn"
+                class="control-btn start-btn">
+
+                <span class="button-icon">▶</span>
+                <span>Start</span>
+
+            </button>
+
+
+            <button
+                id="pauseBtn"
+                class="control-btn pause-btn"
+                disabled>
+
+                <span class="button-icon">Ⅱ</span>
+                <span>Pause</span>
+
+            </button>
+
+
+            <button
+                id="lapBtn"
+                class="control-btn lap-btn"
+                disabled>
+
+                <span class="button-icon">🏁</span>
+                <span>Lap</span>
+
+            </button>
+
+
+            <button
+                id="resetBtn"
+                class="control-btn reset-btn">
+
+                <span class="button-icon">↻</span>
+                <span>Reset</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Lap Section -->
+        <section class="laps-section">
+
+            <div class="laps-header">
+
+                <h2>Lap Times</h2>
+
+                <span id="lapCount">
+                    0 Laps
+                </span>
+
+            </div>
+
+
+            <div class="laps-container">
+
+                <div
+                    id="emptyMessage"
+                    class="empty-message">
+
+                    <span>🏁</span>
+
+                    <p>
+                        Start the stopwatch and<br>
+                        record your first lap.
+                    </p>
+
+                </div>
+
+
+                <ul id="lapsList"></ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Press <strong>Space</strong> to Start / Pause
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
